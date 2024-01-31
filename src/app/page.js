@@ -8,7 +8,7 @@ export default function Home() {
     <main className="h-screen">
       <Header />
 
-      <div className="flex w-full h-full ">
+      <div className="flex w-full h-[90vh] 2xl:h-[90vh]">
         <Sidebar />
         <Grid />
       </div>

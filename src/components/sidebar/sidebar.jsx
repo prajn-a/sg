@@ -13,15 +13,17 @@ import flag from "../../../public/india-flag.svg";
 
 const Sidebar = () => {
   return (
-    <sidebar className="bg-[#e8f6db] w-1/4 2xl:w-1/5 flex flex-col text-center justify-evenly items-center pt-4 pb-14">
+    <sidebar className="bg-[#e8f6db] w-1/4 2xl:w-1/5 flex flex-col text-center justify-around items-center pt-4 pb-10">
       {/* filter  */}
-      <div className="flex items-center gap-3  border-b border-zinc-400 w-full mx-auto justify-center">
+      <div className="flex items-center gap-3  w-full mx-auto justify-center">
         <h2 className="text-lg">Apply Filter</h2>
         <Filter size={18} />
       </div>
 
+      <div className=" border-b border-zinc-400 w-full"></div>
+
       {/* buttons  */}
-      <div className="grid grid-cols-2 px-10 gap-3 gap-x-8  border-b justify-center border-zinc-400 w-full py-6">
+      <div className="grid grid-cols-2 px-10 gap-3 gap-x-8  justify-center  w-full py-2">
         <Button
           text="Trending"
           icon={<TrendingUp size={14} />}
@@ -44,8 +46,10 @@ const Sidebar = () => {
         />
       </div>
 
+      <div className=" border-b border-zinc-400 w-full"></div>
+
       {/* options  */}
-      <div className="flex flex-col gap-4  justify-center items-center py-10 border-b border-zinc-400 w-full">
+      <div className="flex flex-col gap-4  justify-center items-center py-10w-full">
         <div className="flex items-center justify-between bg-white w-72 rounded-full py-2 px-6 border border-zinc-400">
           <h2>CATEGORY</h2>
           <ChevronDown size={18} />
@@ -58,6 +62,8 @@ const Sidebar = () => {
           <ChevronDown size={18} />
         </div>
       </div>
+
+      <div className=" border-b border-zinc-400 w-full"></div>
 
       {/* subscribe badge  */}
       <Image
