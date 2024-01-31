@@ -10,6 +10,8 @@ export default function Home() {
 
       <div className="flex w-full h-[90vh] 2xl:h-[90vh]">
         <Sidebar />
+
+        {/* images  */}
         <Grid />
       </div>
     </main>
